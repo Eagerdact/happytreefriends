@@ -1,0 +1,133 @@
+/* 引入公共的样式文件 */
+@import 'base.less';
+
+// 中间主体部分
+
+#main{
+  background-color: #fff;
+  #nav{
+    padding: 10px;
+    a{
+      display:block;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+#banner{
+  padding: 0 10px;
+    .left{
+      a{
+        display: block;
+         img{
+            width: 50%;
+            float: left;
+          }
+      }
+   }
+   .right{
+      a{
+       display: block;
+          img{
+           width: 100%;
+          }
+      }
+   }
+}
+
+#brand{
+  .title{
+    a{
+      display: block;
+      >img{
+        width: 100%;
+      }
+    }
+  }
+  .content{
+    a{
+      display: block;
+      >img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+#sport,#women,#man{
+  padding: 0 10px;
+  .title{
+    a{
+      display: block;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+.content{
+  .mui-row{
+    >div{
+      padding: 0 5px;
+      &:nth-child(n+3){
+        .product{
+          margin-top: 10px;
+        }
+      }
+      .product{
+        text-align: center;
+        box-shadow: 0 0 1px #ccc;
+        padding-bottom: 10px;
+
+        .product-img{
+          img{
+            width: 100%;
+          }
+        }
+        .product-name{
+    
+        }
+        .product-price{
+          font-size: 12px;
+
+          span{
+            color: red;
+          }
+          del{
+            color: #ccc;
+          }
+        }
+        .product-buy{
+          background-color: @mainColor;
+          border-color: @mainColor;
+        }
+      }
+    }
+  }
+  
+}
+.mui-row{
+  >div{
+    >a{
+      color:#fff;
+      display: block;
+      font-size: 12px;
+      text-align: center;
+      padding: 6px 0;
+      // position: fixed;
+      // z-index: 11;
+      &.active{
+        color: orange;
+      }
+      >i{
+        display: block;
+        font-size: 14px;
+      }
+      > span{
+        display: block;
+      }
+    }
+  }
+}
